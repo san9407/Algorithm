@@ -1,0 +1,12 @@
+int lo = 0, hi = INF;
+	while (lo + 1 < hi)
+	{
+		int mid = lo + (hi - lo) / 2;
+		if (check(mid))
+			lo = mid;
+		else
+			hi = mid;
+	}
+  
+  //[lo,hi)라서 답은 무조건 lo이다.
+  //라이님이 쓰시는 방식
