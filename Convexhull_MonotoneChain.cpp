@@ -1,6 +1,8 @@
 //O(NlogN)
 //모노톤 체인으로 구현
+//그라함스캔보다 구현하기 쉬워서 이것으로 컨벡스헐 짜는걸 추천
 //boj 1708
+
 #include <cstdio>
 #include <algorithm>
 using namespace std;
@@ -59,11 +61,10 @@ int main()
 		}
 		dc[dt++] = p[i];
 	}
-	for (int i = 0; i < ut-1; i++)
+	for (int i = 0; i < ut1; i++)
 		convex[ct++] = uc[i];
-	for (int i = 0; i < dt - 1; i++)
+	for (int i = 1; i < dt - 1; i++)
 		convex[ct++] = dc[i];
 	printf("%d\n", ct);
 	return 0;
 }
-//모노톤체인으로 구현
