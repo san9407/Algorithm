@@ -1,5 +1,5 @@
 //dfs와 bfs의 시간복잡도는 O(N+M)
-
+//boj 1260문제
 #include<cstdio>
 #include<vector>
 #include<queue>
