@@ -1,4 +1,4 @@
-//
+//O(ElogV)
 //다익스트라 기본코드
 //백준 1753
 #include <cstdio>
